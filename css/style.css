@@ -36,6 +36,13 @@ body{
     box-shadow: 8px 8px;
 }
 
+@media (min-width: 700px){
+    .card{
+        width: 384px;
+        height: 522px;
+    }
+}
+
 .card_image{
     width: 279px;
     height: 200px;
@@ -44,6 +51,12 @@ body{
     justify-content: center;
     overflow:hidden ;
     
+}
+
+@media (min-width: 700px){
+    .card_image{
+        width: 336px;
+    }
 }
 
 .card_content{
@@ -68,12 +81,27 @@ body{
     font-size: 1.25em;
     font-weight: 800;
     color: var(--Gray-950);
+    display: inline;
+}
+
+@media (min-width: 700px){
+    .card_title:hover{
+        color: var(--Yellow);
+        cursor: pointer;
+
+    }
 }
 
 .card_paragraph{
     color: var(--Gray-500);
     line-height: 150%;
     font-size: 0.88em;
+}
+
+@media (min-width: 700px){
+    .card_paragraph{
+        font-size: .90em;
+    }
 }
 
 .card_author{
@@ -91,7 +119,6 @@ body{
 }
 
 .author_authorname{
-    
     color: var(--Gray-950);
     font-weight: 800;
     font-size: .90em;
@@ -106,6 +133,7 @@ body{
     left: 0;
     right: 0;
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
